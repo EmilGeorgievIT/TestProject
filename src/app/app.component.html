@@ -1,36 +1,8 @@
-<div class="control-section">
-  <ejs-gantt
-      id="contextMenu" 
-      #gantt 
-      height="850px" 
-      [dataSource]="data" 
-      [taskFields]="taskSettings" 
-      [columns]="columns"
-      [enableContextMenu]="true"
-      [timelineSettings]="timelineSettings" 
-      [allowRowDragAndDrop]="true"
-      [labelSettings]="labelSettings" 
-      (actionBegin)="onActionBegin($event)"
-      [treeColumnIndex]="1" 
-      (toolbarClick)="toolbarClick($event)" 
-      [contextMenuItems]='contextMenuItems' 
-      (contextMenuOpen)="contextMenuOpen($event)" 
-      (contextMenuClick)="contextMenuClick($event)"
-      height="850px" 
-      [allowSelection]="true" 
-      [allowPdfExport]="true"
-      dateFormat="MMM dd, y" 
-      [highlightWeekends]="true"
-      [gridLines]="gridLines" 
-      [eventMarkers]="eventMarkers" 
-      [editSettings]="editSettings" 
-      [allowResizing]="true" 
-      [allowSorting]="true"
-      [toolbar]="toolbar" 
-      [resourceFields] = "resourceFields" 
-      [resources]="resources"
-      (endEdit)='endEditData($event)'
-      (destroyed)='destroyedData($event)' 
-      [splitterSettings]="splitterSettings">
-  </ejs-gantt>
-</div>
+<section class="section-storage">
+  <ejs-filemanager 
+      id='filemanager'
+      (beforeSend)="beforeSend($event)" 
+      [ajaxSettings]='ajaxSettings' 
+      [allowDragAndDrop]='true'>
+  </ejs-filemanager>
+</section>

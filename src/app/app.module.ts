@@ -7,6 +7,7 @@ import { DropDownListAllModule, MultiSelectAllModule } from '@syncfusion/ej2-ang
 import { CheckBoxAllModule } from '@syncfusion/ej2-angular-buttons';
 import { TextBoxAllModule, NumericTextBoxAllModule } from '@syncfusion/ej2-angular-inputs';
 import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
+import { FileManagerAllModule } from '@syncfusion/ej2-angular-filemanager';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ContextMenuModule } from '@syncfusion/ej2-angular-navigations';
     BrowserModule,
     GanttAllModule,
     CheckBoxAllModule,
+    FileManagerAllModule,
     ContextMenuModule,
     TextBoxAllModule,
     NumericTextBoxAllModule,
